@@ -2,52 +2,54 @@
     <footer>
         <div class="first-footer">
             <div class="container">
-                <div>
-                    <div class="prima-lista">
-                        <h3>Dc Comics</h3>
+                <div class="list">
+                    <div>
+                        <div class="prima-lista">
+                            <h3>Dc Comics</h3>
+                            <ul>
+                                <li><a href="#nogo">Characters</a></li>
+                                <li><a href="#nogo">Comics</a></li>
+                                <li><a href="#nogo">Movies</a></li>
+                                <li><a href="#nogo">TV</a></li>
+                                <li><a href="#nogo">Games</a></li>
+                                <li><a href="#nogo">Videos</a></li>
+                                <li><a href="#nogo">News</a></li>
+                            </ul>
+                        </div>
+                        <div class="seconda-lista">
+                            <h3>Shop</h3>
+                            <ul>
+                                <li><a href="#nogo">Shop DC</a></li>
+                                <li><a href="#nogo">Shop DC Collectibles</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="terza-lista">
+                        <h3>Dc</h3>
                         <ul>
-                            <li><a href="#nogo">Characters</a></li>
-                            <li><a href="#nogo">Comics</a></li>
-                            <li><a href="#nogo">Movies</a></li>
-                            <li><a href="#nogo">TV</a></li>
-                            <li><a href="#nogo">Games</a></li>
-                            <li><a href="#nogo">Videos</a></li>
-                            <li><a href="#nogo">News</a></li>
+                            <li><a href="#nogo">Term Of Use</a></li>
+                            <li><a href="#nogo">Privacy policy (New)</a></li>
+                            <li><a href="#nogo">Ad Choices</a></li>
+                            <li><a href="#nogo">Advertising</a></li>
+                            <li><a href="#nogo">Jobs</a></li>
+                            <li><a href="#nogo">Subscription</a></li>
+                            <li><a href="#nogo">Talent Workshops</a></li>
+                            <li><a href="#nogo">CPSC Certificates</a></li>
+                            <li><a href="#nogo">Ratings</a></li>
+                            <li><a href="#nogo">Shop Help</a></li>
+                            <li><a href="#nogo">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="seconda-lista">
-                        <h3>Shop</h3>
+                    <div class="quarta-lista">
+                        <h3>Site</h3>
                         <ul>
-                            <li><a href="#nogo">Shop DC</a></li>
-                            <li><a href="#nogo">Shop DC Collectibles</a></li>
+                            <li><a href="#nogo">DC</a></li>
+                            <li><a href="#nogo">MAD Magazine</a></li>
+                            <li><a href="#nogo">DC Kids</a></li>
+                            <li><a href="#nogo">DC Universe</a></li>
+                            <li><a href="#nogo">DC Power Visa</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="terza-lista">
-                    <h3>Dc</h3>
-                    <ul>
-                        <li><a href="#nogo">Term Of Use</a></li>
-                        <li><a href="#nogo">Privacy policy (New)</a></li>
-                        <li><a href="#nogo">Ad Choices</a></li>
-                        <li><a href="#nogo">Advertising</a></li>
-                        <li><a href="#nogo">Jobs</a></li>
-                        <li><a href="#nogo">Subscription</a></li>
-                        <li><a href="#nogo">Talent Workshops</a></li>
-                        <li><a href="#nogo">CPSC Certificates</a></li>
-                        <li><a href="#nogo">Ratings</a></li>
-                        <li><a href="#nogo">Shop Help</a></li>
-                        <li><a href="#nogo">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="quarta-lista">
-                    <h3>Site</h3>
-                    <ul>
-                        <li><a href="#nogo">DC</a></li>
-                        <li><a href="#nogo">MAD Magazine</a></li>
-                        <li><a href="#nogo">DC Kids</a></li>
-                        <li><a href="#nogo">DC Universe</a></li>
-                        <li><a href="#nogo">DC Power Visa</a></li>
-                    </ul>
                 </div>
                 <div>
                     <img src="../../public/img/dc-logo-bg.png" alt="DC Logo Background">
@@ -92,10 +94,22 @@
                 @include dflex;
                 height: 50vh;
 
+                .list {
+                    display: flex;
+                    
+                    div {
+                        margin-right: 25px;
+                    }
+
+                    .seconda-lista {
+                        margin-top: 25px;
+                    }
+                }
+
                 h3 {
                     color: $whitetext;
                     text-transform: uppercase;
-                    margin-bottom: 10px;
+                    margin-bottom: 15px;
                 }
                 ul {
                     list-style: none;
@@ -105,7 +119,7 @@
                         color: $textgray;
                         @include dflex;
                         font-size: 0.9rem;
-                        margin-bottom: 8px;
+                        margin-bottom: 4px;
                     }
                 }
                 
