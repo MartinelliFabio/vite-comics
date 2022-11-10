@@ -19,7 +19,7 @@
 @use '../assets/style/partials/variables' as *;
 
 main {
-    background-color: $blacktext;
+    background-color: $bgblack;
     
     .container {
         height: 150px;

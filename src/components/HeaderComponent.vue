@@ -3,7 +3,7 @@
         <div class="container">
             <div class="logo">
                 <a href="#">
-                    <img src="../assets/img/dc-logo.png" alt="Logo DC">
+                    <img src="/public/img/dc-logo.png" alt="Logo DC">
                 </a>
             </div>
             <nav>
@@ -97,7 +97,7 @@ header {
                     display: inline-block;
                     text-transform: uppercase;
                     margin-right: 20px;
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
 
                     a {
                         text-decoration: none;
@@ -108,8 +108,8 @@ header {
 
                         &.active,
                         &:hover {
-                            color: $bluetext;
-                            border-bottom: 5px solid $bluetext;
+                            color: $bluelink;
+                            border-bottom: 5px solid $bluelink;
                         }
                     }
                 }
