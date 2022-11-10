@@ -1,6 +1,12 @@
 @mixin dflex {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
     justify-content: space-between;
+    align-items: center;
+}
+
+@mixin center {
+    display: flex;
     align-items: center;
 }

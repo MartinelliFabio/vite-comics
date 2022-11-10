@@ -2,9 +2,7 @@
   
   <HeaderComponent/>
   
-  <main>
-    <MainComponent/>
-  </main>
+  <MainComponent/>
 
   <FooterComponent/>
 
