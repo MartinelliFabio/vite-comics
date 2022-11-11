@@ -2,8 +2,18 @@
     <main>
         <div class="container">
             <div class="main-content">
-                <h1> --> Content goes here &lt;-- </h1>
+                <div class="row">
+                    <div class="card" v-for="(comic, index) in comics" :key="index">
+                        <div class="img-box">
+                            <img :src="comic.thumb" :alt="comic.series">
+                        </div>
+                        <p>{{comic.series}}</p>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="btn-box">
+            <a href="#nogo"><button>Load more</button></a>
         </div>
     </main>
 </template>
@@ -30,11 +40,53 @@ main {
     background-color: $bgblack;
     
     .container {
-        height: 150px;
-        @include dflex;
-        
+        padding-top: 3.5rem;
+        padding-bottom: 8rem;
+
         .main-content {
             color: $whitetext;
+            
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 50px;
+
+                .card {
+                    height: 200px;
+                    width: calc(100% / 6);
+                    
+                    .img-box {
+                        height: 95%;
+                        overflow-y: hidden;
+                    }
+
+                    p {
+                        margin-top: 15px;
+                        width: 80%;
+                    }
+                }
+            }
+            
+        }
+    }
+    .btn-box {
+        display: flex;
+        justify-content: center;
+
+        button {
+            border: 0;
+            background-color: $bluelink;
+            padding: 10px 55px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            color: $whitetext;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+
+            &:hover {
+                background-color: $bluetext;
+            }
         }
     }
 }
