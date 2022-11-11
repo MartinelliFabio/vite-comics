@@ -9,8 +9,16 @@
 </template>
 
 <script>
+import {comics} from '../data/comics';
+
     export default {
-        name: 'MainComponent'
+        name: 'MainComponent',
+        data() {
+            return {
+                comics: comics,
+            }
+        }
+        
     }
 </script>
 
