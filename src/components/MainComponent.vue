@@ -45,6 +45,7 @@ main {
 
         .main-content {
             color: $whitetext;
+            padding: 1rem;
             
             .row {
                 display: flex;
